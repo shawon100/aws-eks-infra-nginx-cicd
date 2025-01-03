@@ -57,7 +57,7 @@ This section describes how to use the AWS CDK to provision an Amazon EKS cluster
 5. **Update Kube Config**
 
     ```sh
-    aws eks --region us-east-1 update-kubeconfig --name dev-env --role-arn arn:aws:iam::054637298067:role/eks-cluster-role
+    aws eks --region us-east-1 update-kubeconfig --name dev-env --role-arn arn:aws:iam::AccountNumber:role/eks-cluster-role
     ```
     Note: If you are facing any access issue go to the eks-cluster-role and update the Trust relationship by adding your aws cdk user arn (Added trust-policy.json)
 
