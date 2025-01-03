@@ -15,7 +15,7 @@ class InfrastructureStack(Stack):
         super().__init__(scope, id, **kwargs)
         
         # Create S3 bucket
-        s3_bucket = s3.Bucket(self, id="bucket2",  bucket_name="arcidan-bucket")
+        s3_bucket = s3.Bucket(self, id="bucket2",  bucket_name="arcadian-bucket")
 
         # The code that defines your stack goes here
         eks_role = iam.Role(self, "eksadmin", assumed_by=iam.ServicePrincipal(service='ec2.amazonaws.com'),

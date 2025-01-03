@@ -150,7 +150,7 @@ The pipeline is triggered on a `push` event to the `main` branch.
      id: build-image
      env:
        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-       ECR_REPOSITORY: arcidan
+       ECR_REPOSITORY: arcadian
      run: |
        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$GITHUB_SHA .
        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$GITHUB_SHA
