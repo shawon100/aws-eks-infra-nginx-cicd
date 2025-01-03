@@ -7,7 +7,7 @@
 - [Deploying the Helm Chart](#deploying-the-helm-chart)
   - [Steps to Deploy](#steps-to-deploy)
 - [CI/CD Pipeline](#How-the-CI/CD-Pipeline-Works)
-  - [Pipeline Steps](#pipeline-steps)
+  - [Pipeline Steps](#Steps-Breakdown)
 
 ## Infrastructure-as-Code Script
 
@@ -28,12 +28,14 @@ This section describes how to use the AWS CDK to provision an Amazon EKS cluster
 
    ```sh
    git clone https://github.com/shawon100/aws-eks-infra-nginx-cicd.git
-   cd aws-eks-infra-nginx-cicd/infrastructure
+   cd aws-eks-infra-nginx-cicd/infrastructures
    ```
-2. **Install Dependencies**
+2. **Install Virtual Env & Dependencies**
 
 
    ```sh
+   python3 -m venv .venv
+   source .venv/bin/activate
    pip install -r requirements.txt
    ```
 
