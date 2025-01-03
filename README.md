@@ -6,7 +6,7 @@
   - [Steps to Run](#steps-to-run)
 - [Deploying the Helm Chart](#deploying-the-helm-chart)
   - [Steps to Deploy](#steps-to-deploy)
-- [CI/CD Pipeline](#cicd-pipeline)
+- [CI/CD Pipeline](#How-the-CI/CD-Pipeline-Works)
   - [Pipeline Steps](#pipeline-steps)
 
 ## Infrastructure-as-Code Script
