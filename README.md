@@ -6,7 +6,7 @@
   - [Steps to Run](#steps-to-run)
 - [Deploying the Helm Chart](#deploying-the-helm-chart)
   - [Steps to Deploy](#steps-to-deploy)
-- [How the CI/CD Pipeline Works](#How-the-CI/CD-Pipeline-Works)
+- [How the CI/CD Pipeline Works](#cicd-pipeline)
   - [Pipeline Steps](#Steps-Breakdown)
 
 ## Infrastructure-as-Code Script
@@ -103,7 +103,7 @@ This section describes how to deploy an NGINX container on the provisioned EKS c
    Go to your EKS security group and Allow HTTP port 80 to access the URL
 
 
-### How the CI/CD Pipeline Works
+## CI/CD Pipeline
 
 This CI/CD pipeline automates the process of building a Docker image using a Dockerfile, pushing it to Amazon ECR, and deploying the application to an Amazon EKS cluster. It's located on cicd/.github/workflows/deployment.yml
 
