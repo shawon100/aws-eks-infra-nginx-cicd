@@ -27,8 +27,8 @@ This section describes how to use the AWS CDK to provision an Amazon EKS cluster
    Clone the repository to your local machine:
 
    ```sh
-   git clone https://github.com/your-repo/infrastructure.git
-   cd infrastructure
+   git clone https://github.com/shawon100/aws-eks-infra-nginx-cicd.git
+   cd aws-eks-infra-nginx-cicd/infrastructure
    ```
 2. **Install Dependencies**
 
@@ -74,8 +74,10 @@ This section describes how to deploy an NGINX container on the provisioned EKS c
 
 1. **Switch to Deployment Folder**
 
-   ```sh
    Go to deployment folder of the repository
+
+   ```sh
+   cd deployment
    ```
 2. **Install the Nginx Chart**
 
@@ -101,7 +103,7 @@ This section describes how to deploy an NGINX container on the provisioned EKS c
 
 ## How the CI/CD Pipeline Works
 
-This CI/CD pipeline automates the process of building a Docker image using a Dockerfile, pushing it to Amazon ECR, and deploying the application to an Amazon EKS cluster.
+This CI/CD pipeline automates the process of building a Docker image using a Dockerfile, pushing it to Amazon ECR, and deploying the application to an Amazon EKS cluster. It's located on cicd/.github/workflows/deployment.yml
 
 ### Trigger
 The pipeline is triggered on a `push` event to the `main` branch.
